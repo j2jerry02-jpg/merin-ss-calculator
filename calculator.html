@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <script language="javascript">
+            function add()
+            {
+                var a = parseInt(document.getElementById('n1').value);
+                var b = parseInt(document.getElementById('n2').value);
+                var sum = a + b;
+                document.getElementById('result').value = sum;
+                        }
+                        function sub()
+                        {
+                            var a = parseInt(document.getElementById('n1').value);
+                            var b = parseInt(document.getElementById('n2').value);
+                            var sub = a - b;
+                            document.getElementById('result').value = sub;
+                        }
+                        function  multiply()
+                        {
+                        var a = parseInt(document.getElementById('n1').value);
+                        var b = parseInt(document.getElementById('n2').value);
+                        var multiply = a * b;
+                        document.getElementById('result').value = multiply;
+                        }
+                         function division()
+                        {
+                        var a = parseInt(document.getElementById('n1').value);
+                        var b = parseInt(document.getElementById('n2').value);
+                        var division = a / b;
+                        document.getElementById('result').value = division;
+                        }
+        </script>
+    </head>
+    <body>
+        <title>your calculator</title>
+        <h2 style="color: brown;">Hii....Aj</h2>
+        <form style="padding:20px;background-color: blueviolet;">
+            first number <input type="text" id="n1"
+            placeholder="first number" style="background-color: aqua; border: 1px;"><br><br>
+            second number <input type="text" id="n2"
+            placeholder="second number" style="background-color: aqua; border:1px;"><br><br>
+            <input type="button" value="sum" onclick="add()">
+            <input type="button" value="subtract"
+            onclick="sub()"><br><br>
+            <input type="button" value="multiply" onclick="multiply()"><br><br>
+            <input type="button" value="division" onclick="division()"><br><br>
+            result: <input type="text" id="result">
+        </form>
+    </body>
+</html>
